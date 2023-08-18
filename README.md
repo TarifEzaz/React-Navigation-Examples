@@ -24,3 +24,13 @@ react-native-screens: exposes react-navigation container components to React Nat
 ## How does the back button appears in @react-navigation/native-stack?
 
 The header provided by the native stack navigator will automatically include a back button when it is possible to go back from the active screen (if there is only one screen in the navigation stack, there is nothing that you can go back to, and so there is no back button).
+
+## What will happen if goback function inside navigation prop is called from the first screen? 
+
+The following message will be shown: 
+
+"The action 'GO_BACK' was not handled by any navigator.
+Is there any screen to go back to?
+This is a development-only warning and won't be shown in production."
+
+
