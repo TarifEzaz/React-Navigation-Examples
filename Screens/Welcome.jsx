@@ -8,7 +8,6 @@ export default function WelcomeWorld({navigation}) {
                 title="Go to Home Page!"
                 onPress={() => navigation.navigate('Home')}
             />
-            <Button title="Go back" onPress={() => navigation.goBack()} />
         </View>
     )
 }
