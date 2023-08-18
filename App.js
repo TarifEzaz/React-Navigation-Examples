@@ -24,7 +24,7 @@ function WelcomeWorld({navigation}) {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Welcome">
         <Stack.Screen name="Home" component={HelloWorld}/>
         <Stack.Screen name="Welcome" component={WelcomeWorld} />
       </Stack.Navigator>
