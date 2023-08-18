@@ -13,11 +13,20 @@ function HelloWorld({navigation}) {
   )
 }
 
+function WelcomeWorld({navigation}) {
+  return (
+    <View>
+      <Text>Welcome World!</Text>
+    </View>
+  )
+}
+
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HelloWorld}/>
+        <Stack.Screen name="Welcome" component={WelcomeWorld} />
       </Stack.Navigator>
     </NavigationContainer>
   );
