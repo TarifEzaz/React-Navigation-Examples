@@ -21,3 +21,6 @@ react-native-safe-area-context: handles safe area on iOS, android and the web. M
 
 react-native-screens: exposes react-navigation container components to React Native. More on: https://www.npmjs.com/package/react-native-screens
 
+## How does the back button appears in @react-navigation/native-stack?
+
+The header provided by the native stack navigator will automatically include a back button when it is possible to go back from the active screen (if there is only one screen in the navigation stack, there is nothing that you can go back to, and so there is no back button).
