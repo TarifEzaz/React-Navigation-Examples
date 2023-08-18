@@ -18,5 +18,6 @@ Read more about Native Stack Navigator at: https://reactnavigation.org/docs/nati
 Two libraries react-native-safe-area-context and react-screens are required as dependencies for @react-nativagation/native-stack. They have the following basic usages: 
 
 react-native-safe-area-context: handles safe area on iOS, android and the web. More on: https://www.npmjs.com/package/react-native-safe-area-context
+
 react-native-screens: exposes react-navigation container components to React Native. More on: https://www.npmjs.com/package/react-native-screens
 
