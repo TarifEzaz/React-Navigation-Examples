@@ -8,8 +8,8 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
       <Stack.Navigator initialRouteName="Welcome">
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Welcome" component={Welcome} />
+        <Stack.Screen name="Home" component={Home} options={{ title: 'My Home' }}/>
+        <Stack.Screen name="Welcome" component={Welcome} options={({ route }) => ({ title: route.params.name })} />
       </Stack.Navigator>
   );
 }
