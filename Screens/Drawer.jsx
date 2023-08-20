@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Button, View } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import Home from "./Home";
+import Welcome from "./Welcome";
 
 function HomeScreen({ navigation }) {
   return (
@@ -26,8 +28,8 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <Drawer.Navigator initialRouteName="Home">
-      <Drawer.Screen name="Home" component={HomeScreen} />
-      <Drawer.Screen name="Notifications" component={NotificationsScreen} />
+      <Drawer.Screen name="Home" component={Home} />
+      <Drawer.Screen name="Notifications" component={Welcome} />
     </Drawer.Navigator>
   );
 }
