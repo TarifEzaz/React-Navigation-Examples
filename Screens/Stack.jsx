@@ -5,11 +5,11 @@ import Welcome from "./Welcome";
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
+export default function App({navigation}) {
   return (
       <Stack.Navigator initialRouteName="Welcome">
         <Stack.Screen name="Home" component={Home} options={{ title: 'My Home' }}/>
-        <Stack.Screen name="Welcome" component={Welcome} options={({ route }) => ({ title: route.params.name })} />
+        <Stack.Screen name="Welcome" component={Welcome} />
       </Stack.Navigator>
   );
 }
