@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from "./Home";
+import Welcome from "./Welcome";
 
 function UserScreen() {
   return (
@@ -23,8 +25,8 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (
       <Tab.Navigator>
-        <Tab.Screen name="Home" component={UserScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Settings" component={Welcome} />
       </Tab.Navigator>
   );
 }
