@@ -13,8 +13,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Drawer">
-        <Stack.Screen name="Home" component={HelloWorld}/>
-        <Stack.Screen name="Welcome" component={WelcomeWorld} />
+        <Stack.Screen name="Home" component={HelloWorld} options={{ title: 'My Home' }}/>
+        <Stack.Screen name="Welcome" component={WelcomeWorld} options={{ title: 'My Home' }} />
         <Stack.Screen name="Tab" component={Tab} />
         <Stack.Screen name="Drawer" component={Drawer} />
       </Stack.Navigator>
