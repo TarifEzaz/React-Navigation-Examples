@@ -228,6 +228,18 @@ In a web browser, you can link to different pages using an anchor (<a>) tag. Whe
 
 A key difference between how this works in a web browser and in React Navigation is that React Navigation's native stack navigator provides the gestures and animations that you would expect on Android and iOS when navigating between routes in the stack. 
 
+## How to install stack navigator in your project using yarn?
+
+Each navigator in React Navigation lives in its own library. To use the native stack navigator, we need to install @react-navigation/native-stack :
+
+```code
+yarn add @react-navigation/native-stack
+```
+
+## What does createNativeStackNavigator function do? 
+
+createNativeStackNavigator is a function that returns an object containing 2 properties: Screen and Navigator. Both of them are React components used for configuring the navigator. The Navigator should contain Screen elements as its children to define the configuration for routes.
+
 ## What should be done if someone wants to go to the next step of React navigation? 
 While most users won't need to do this, if you are curious and want to learn more about how React Navigation works, it's recommended to work through the "Build your own Navigator" section.
 
