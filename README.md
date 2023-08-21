@@ -240,6 +240,18 @@ yarn add @react-navigation/native-stack
 
 createNativeStackNavigator is a function that returns an object containing 2 properties: Screen and Navigator. Both of them are React components used for configuring the navigator. The Navigator should contain Screen elements as its children to define the configuration for routes.
 
+## What is a Group component in React Navigation?
+
+Group components are used to group several screens inside a navigator.
+
+A Group is returned from a createXNavigator function:
+
+```code
+const Stack = createStackNavigator(); // Stack contains Screen & Navigator properties
+```
+
+After creating the navigator, it can be used as children of the Navigator component.
+
 ## What should be done if someone wants to go to the next step of React navigation? 
 While most users won't need to do this, if you are curious and want to learn more about how React Navigation works, it's recommended to work through the "Build your own Navigator" section.
 
