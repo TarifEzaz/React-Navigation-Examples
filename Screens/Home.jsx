@@ -23,6 +23,10 @@ export default function HelloWorld({navigation}) {
                     )
                 }                
             />
+            <Button 
+                title="Click to open Modal"
+                opPress={()=>navigation.navigate("MyModal")}
+            />
         </View>
     )
 }
