@@ -36,6 +36,8 @@ This is a development-only warning and won't be shown in production."
 ## How does a basic Navigation state look like? 
 
 The state of a navigator generally looks something like this:
+
+```code
 {
   key: 'StackRouterRoot',
   index: 1,
@@ -44,6 +46,7 @@ The state of a navigator generally looks something like this:
     { key: 'B', name: 'Profile' },
   ]
 }
+```
 For this navigation state, there are two routes (which may be tabs, or cards in a stack). The index indicates the active route, which is "B".
 
 ## What is a Router in React Navigation? 
