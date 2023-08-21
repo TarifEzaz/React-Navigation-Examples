@@ -33,6 +33,19 @@ The following message will be shown:
 Is there any screen to go back to?
 This is a development-only warning and won't be shown in production."
 
+## How does a basic Navigation state look like? 
+
+The state of a navigator generally looks something like this:
+{
+  key: 'StackRouterRoot',
+  index: 1,
+  routes: [
+    { key: 'A', name: 'Home' },
+    { key: 'B', name: 'Profile' },
+  ]
+}
+For this navigation state, there are two routes (which may be tabs, or cards in a stack). The index indicates the active route, which is "B".
+
 ## License
 
 [MIT License](LICENSE)
