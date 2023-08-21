@@ -33,4 +33,7 @@ The following message will be shown:
 Is there any screen to go back to?
 This is a development-only warning and won't be shown in production."
 
+## License
+
+[MIT License](LICENSE)
 
