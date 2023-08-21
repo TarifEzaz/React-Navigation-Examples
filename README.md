@@ -220,6 +220,14 @@ A router is a collection of functions that decide how to handle actions and stat
 
 Also known as navigation header, navigation bar, app bar, and probably many other things. This is the rectangle at the top of your screen that contains the back button and the title for your screen. The entire rectangle is often referred to as the header in React Navigation.
 
+## How is React Navigation similar to Web Browser Stack?
+
+In a web browser, you can link to different pages using an anchor (<a>) tag. When the user clicks on a link, the URL is pushed to the browser history stack. When the user presses the back button, the browser pops the item from the top of the history stack, so the active page is now the previously visited page. React Native doesn't have a built-in idea of a global history stack like a web browser does -- this is where React Navigation enters the story.
+
+## What is a key difference between React Navigation and Web Browser?
+
+A key difference between how this works in a web browser and in React Navigation is that React Navigation's native stack navigator provides the gestures and animations that you would expect on Android and iOS when navigating between routes in the stack. 
+
 ## What should be done if someone wants to go to the next step of React navigation? 
 While most users won't need to do this, if you are curious and want to learn more about how React Navigation works, it's recommended to work through the "Build your own Navigator" section.
 
