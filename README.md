@@ -46,6 +46,11 @@ The state of a navigator generally looks something like this:
 }
 For this navigation state, there are two routes (which may be tabs, or cards in a stack). The index indicates the active route, which is "B".
 
+## What is a Router in React Navigation? 
+
+A router is a collection of functions that decide how to handle actions and state changes in the navigator (similar to reducers in Redux apps). Normally you'd never need to interact with a router directly, unless you're writing a custom navigator.
+
+
 ## License
 
 [MIT License](LICENSE)
